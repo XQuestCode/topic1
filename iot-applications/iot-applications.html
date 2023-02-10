@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="./styles.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="A web page about IoT Applications" />
+        <meta name="author" content="Me" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IoT Applications</title>
+    </head>
+    <body>
+        <h1>A website designed by me</h1>
+        
+
+        <p>Activities</p>
+        <button type="button" class="collapsible">IoT Apps</button>
+        <div class="content">
+            <p>IoT applications work with IoT devices to perform variety of
+                tasks like edge computing, surveillance, generate real time
+                insights from data collected.
+                <br>Some of the features needed to be supported are:
+                Secured Communication, Cross platform, Interactive and user
+                friendly UI, Seamless computing, and Data Security.
+                <br>Some examples are: Smart home or Health monitoring wearables
+            </p>
+        </div>
+        <button type="button" class="collapsible">Smart Building</button>
+        <div class="content">
+            <p> A smart building involves the installation and use of advanced
+                and integrated building technology systems.<br>
+                These systems include building automation, life safety,
+                telecommunications, user systems, and facility management
+                systems.</p>
+        </div>
+        <button type="button" class="collapsible">Control Interface</button>
+        <div class="content">
+            <p>In this context, the Control Interface might be an G.U.I (could
+                be an webpage, application) which allows users to access or make
+                changes, customize the features available through the
+                technology.<br> Some of them could be Doors security on basis of
+                credentials, Automated or Manual Curtains control depending on
+                light intensity, or Automated home cleaning.
+            </p>
+        </div>
+        <p></p>
+        
+        <button type="button" class="collapsible">IoT Applications</button>
+        <div class="content">
+            <p> <!-- To add lists  -->
+                <ul>
+                <li>Smart City</li>
+                <li>Self-driven Cars</li>
+                <li>IoT Retail Shops</li>
+                <li>Farming</li>
+                <li>Wearables</li>
+                <li>Smart Grids</li>
+                <li>Industrial Internet</li>
+                <li>Telehealth</li>
+                <li>Smart Supply-chain Management</li>
+                <li>Traffic management</li>
+                <li>Water and Waste management</li>
+                </ul></p>
+        </div>
+        <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+  <h1>Sliding Diagonals Background Effect</h1>
+</div>
+        <!-- Event to recieve whenever button is clicked and hence expand the options -->
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+            <footer>
+                <div class="bottom">
+                <p>Author: <br>
+                <a href="mailto:thanx.adi@gmail.com">thanx.adi@gmail.com</a></p>
+            </div>
+              </footer>
+            
+    </body>
+
+</html>
